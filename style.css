@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    /* font-weight: 400; */
+    /* font-weight: 600; */
+    /* font-weight: 700; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(275, 100%, 97%);
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main {
+    background-color: hsl(0, 100%, 100%);
+    width: 600px;
+    box-shadow: 4px 4px 32px rgba(47, 21, 51, 0.2);
+    border-radius: 12px;
+    padding: 24px 32px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+header img {
+    width: 42px;
+}
+
+section {
+    border-bottom: 1px solid hsl(275, 100%, 97%);
+    /* margin: 24px 0 32px; */
+}
+
+section:nth-child(5) {
+    border: none;
+    /* margin-bottom: 0; */
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: hsl(292, 42%, 14%);
+    font-size: 56px;
+}
+
+h2 {
+    color: hsl(292, 42%, 14%);
+    font-size: 18px;
+}
+
+p {
+    color: hsl(292, 16%, 49%);
+    font-size: 16px;
+    /* margin: 16px 0 24px; */
+}
+
+.hidden {
+    display: none;
+}
