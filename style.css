@@ -17,8 +17,9 @@ body {
     align-items: center;
     background-color: hsl(275, 100%, 97%);
     background-image: url(./assets/images/background-pattern-desktop.svg);
-    background-size: contain;
     background-repeat: no-repeat;
+    background-position-x: center;
+    padding: 32px;
 }
 
 main {
@@ -26,7 +27,7 @@ main {
     width: 600px;
     box-shadow: 4px 4px 32px rgba(47, 21, 51, 0.2);
     border-radius: 12px;
-    padding: 24px 32px;
+    padding: 32px;
 }
 
 header {
@@ -42,12 +43,13 @@ header img {
 
 section {
     border-bottom: 1px solid hsl(275, 100%, 97%);
-    /* margin: 24px 0 32px; */
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 section:nth-child(5) {
     border: none;
-    /* margin-bottom: 0; */
+    padding-bottom: 0;
 }
 
 div {
@@ -66,12 +68,42 @@ h2 {
     font-size: 18px;
 }
 
+h2:hover {
+    color: hsl(293, 50%, 52%);
+}
+
 p {
     color: hsl(292, 16%, 49%);
     font-size: 16px;
-    /* margin: 16px 0 24px; */
+    margin: 16px 0 8px;
+    line-height: 20px;
 }
 
 .hidden {
     display: none;
+}
+
+.button {
+    cursor: pointer;
+}
+
+@media (max-width:680px) {
+    body {
+        background-size: auto;
+    }
+
+    header img {
+        width: 32px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+}
+
+@media (min-width:1440px) {
+    body {
+        background-size: contain;
+    }
 }
