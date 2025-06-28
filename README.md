@@ -1,0 +1,1 @@
+https://faqaccordion280625.netlify.app/
